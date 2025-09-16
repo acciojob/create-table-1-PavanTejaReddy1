@@ -11,5 +11,6 @@ function insert_Row() {
 
 	tr.append(td1, td2);
 
-	table.insertBefore(tr, table.firstChild);
+	const tbody = table.tBodies[0];
+    tbody.insertBefore(tr, tbody.firstChild);
 }
